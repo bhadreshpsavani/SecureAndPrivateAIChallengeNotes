@@ -15,3 +15,21 @@ Training multilayer networks is done through backpropagation which is really jus
 
 Mathematically, this is really just calculating the gradient of the loss with respect to the weights using the chain rule.
 We update our weights using this gradient with some learning rate  𝛼 .
+
+-------------------Autograde-------------------------
+torch provides a module, autograd, for automatically calculating the gradients of tensors.
+
+-------------steps to build model using pytorch------------------
+Building step:
+1. Build Model
+2. define Loss and Optimizer
+
+Training step:
+3. get Data
+4. Transform data
+5. Passdata to model (Forward Pass to get logits) 
+6. Calculate losses
+7. Updates hyperparameters using Gradient Decent
+
+Testing step:
+8. Test model and  get Accuracy

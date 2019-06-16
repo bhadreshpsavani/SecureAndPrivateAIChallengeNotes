@@ -33,3 +33,11 @@ Training step:
 
 Testing step:
 8. Test model and  get Accuracy
+
+----------------Why model.eval()?-------------------
+
+During traning we want to use droupout layer to prevent overfitting, but during inference(Testing, Evaluation) we don't use droupout layers
+for that we need to use 
+model.eval() #to set model in evaluation mode
+model.train() #to set model in training mode
+

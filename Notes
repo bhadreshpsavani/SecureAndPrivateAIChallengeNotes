@@ -1,0 +1,17 @@
+Day1: 16-06-2019
+
+----------------Gradient Descent-------------
+
+By minimizing this loss with respect to the network parameters, we can find configurations where the loss is at a minimum and 
+the network is able to predict the correct labels with high accuracy. 
+
+We find this minimum using a process called gradient descent.
+
+------------Why BackPropogation---------------
+
+For single layer networks, gradient descent is straightforward to implement. 
+
+Training multilayer networks is done through backpropagation which is really just an application of the chain rule from calculus.
+
+Mathematically, this is really just calculating the gradient of the loss with respect to the weights using the chain rule.
+We update our weights using this gradient with some learning rate  𝛼 .

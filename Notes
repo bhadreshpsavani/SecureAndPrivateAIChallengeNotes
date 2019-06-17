@@ -52,4 +52,8 @@ Save model para: torch.save(model.state_dict(), 'checkpoint.pth')
 Load model para: state_dict = torch.load('checkpoint.pth') #get checkpoint
                  model.load_state_dict(state_dict) #get trained model
 
+Loading the state dict works only if the model architecture is exactly the same as the checkpoint architecture.
 
+This means we need to rebuild the model exactly as it was when trained. Information about the model architecture needs to be saved 
+in the checkpoint, along with the state dict. To do this,you build a dictionary with all the information you need to compeletely 
+rebuild the model.

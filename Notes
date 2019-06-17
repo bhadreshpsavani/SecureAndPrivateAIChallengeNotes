@@ -25,8 +25,11 @@ Building step:
 2. define Loss and Optimizer
 
 Training step:
-3. get Data
-4. Transform data
+4. Transform and Load:
+    1. Transform
+    2. Download and Load Training Data
+    3. Download and Load Testing Data
+
 5. Passdata to model (Forward Pass to get logits) 
 6. Calculate losses
 7. Updates hyperparameters using Gradient Decent
@@ -40,4 +43,13 @@ During traning we want to use droupout layer to prevent overfitting, but during 
 for that we need to use 
 model.eval() #to set model in evaluation mode
 model.train() #to set model in training mode
+
+Day2: 17-06-2019
+
+The parameters for PyTorch networks are stored in a model's state_dict, we can access it using "model.state_dict()"
+
+Save model para: torch.save(model.state_dict(), 'checkpoint.pth')
+Load model para: state_dict = torch.load('checkpoint.pth') #get checkpoint
+                 model.load_state_dict(state_dict) #get trained model
+
 

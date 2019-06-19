@@ -21,6 +21,17 @@ We update our weights using this gradient with some learning rate  𝛼 .
 -------------------Autograde-------------------------
 torch provides a module, autograd, for automatically calculating the gradients of tensors.
 
+If we have tensor we want to calculate gradient for it then Autograd will automatically calculate gradient for us,
+
+we have have top tell that x=tensor.zeros(require_grad=true) to keep track of all the changes so when time comes we can do back 
+propogation to calculate gradient.
+
+we can turn it off using "with tensor.no_grade():"
+
+set gradient on and off globally using "torch.set_grad_enabled(True|False)"
+
+Pytorch keeps accumulate gradients, so we need to clear gradient in every training backward passes using "optimizer.zero_grad()"
+
 -------------steps to build model using pytorch------------------
 Building step:
 1. Build Model
@@ -64,3 +75,17 @@ Day3 : 19-06-2019
 How broadcasting works in pytorch?
 
 for computational reasons if we are nn.CrossEntropyLoss() then we have to pass logits not the probabilities in the function.
+
+Adam vs SGD? Adam has momentum which speeds up the actual fitting process and also adjust learning rate for each of the individual porameters in your model
+
+What should be the matrix is up to the developer what he want to optimize, a lot of time it is accuracy, It can also be top 5 error rate, 
+precision recall
+
+nn.NLLLoss(): Negative log liklihood loss
+
+Quick question:> Transforms increases data or not?
+
+-----------------------------------Secure and Private AI----------------------------------
+
+Federate Learning
+Differential Privacy: when model learn from sensative data, it should learn what it suppose to learn

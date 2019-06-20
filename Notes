@@ -89,3 +89,17 @@ Quick question:> Transforms increases data or not?
 
 Federate Learning
 Differential Privacy: when model learn from sensative data, it should learn what it suppose to learn
+
+-----------------------------------Differential Privacy------------------------------------
+Two different kind of privacy which refers to the place where we can add noise:
+
+Local Differential Privacy: Add Noise to each individual data point(user are most protected)
+Global Differential Privacy: Add noise to the output of the function
+
+Global Diff. Privacy leads to more accurate result than Local Diff. Privacy
+Trusted Curator: Database owner in the Global Diff. privacy.
+
+Diffrential Privacy always requires a form of randomness or noise added to the query to protect from differencing attack,
+
+Randomized Response: Technique used in the social science when trying to learn about the high level trends for taboo behaviour 
+Plausible Deniability: 

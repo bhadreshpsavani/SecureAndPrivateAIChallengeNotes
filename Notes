@@ -103,3 +103,17 @@ Diffrential Privacy always requires a form of randomness or noise added to the q
 
 Randomized Response: Technique used in the social science when trying to learn about the high level trends for taboo behaviour 
 Plausible Deniability: 
+
+There are two types of Noise that we can add:
+Gaussian Noise and 
+Laplacian Noise (works better)
+
+How much Noise should we add?
+Function of four things:
+1. type of Noise(Gaussian/Laplacian)
+2. Sensitivity of query
+3. Desired Epsilon
+4. Desired Delta
+
+Laplacian Noise:
+b= sensitivity(query)/ Epsilon (For Laplacian Delta is always zero) 

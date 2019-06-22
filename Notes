@@ -117,3 +117,11 @@ Function of four things:
 
 Laplacian Noise:
 b= sensitivity(query)/ Epsilon (For Laplacian Delta is always zero) 
+
+If Epsilon is lower, we are increasing the amount of noise we are adding
+
+If we have function with small sensitivity we can add less Noise 
+
+perfect privacy: query from the database return same value even if we remove a person from database
+
+(in the sense of deep Learning): Training a model should return the same model even if we remove any person from database

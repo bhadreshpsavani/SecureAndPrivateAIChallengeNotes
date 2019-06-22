@@ -125,3 +125,11 @@ If we have function with small sensitivity we can add less Noise
 perfect privacy: query from the database return same value even if we remove a person from database
 
 (in the sense of deep Learning): Training a model should return the same model even if we remove any person from database
+
+We have to add adequate Noise because: 
+Access Noise heart Model Accuaray
+While Less Noise has risk of individual Privacy
+
+Core Assumption of PATE Analysis is all the dataset don't have common data, they all have diffrent partition
+
+PATE analysis, Epsilon level is based on the level of agreement, if agreement is high epsilon should be low and visa versa.
